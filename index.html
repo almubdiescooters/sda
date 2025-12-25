@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Consumers Evaluate Value When Choosing Food Options</title>
+    <meta name="description" content="Understand how consumers assess value in food choices by balancing price, quality, convenience, and expectations before ordering.">
+    <link rel="canonical" href="https://consumer-insights.com/food-value-perception/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://consumer-insights.com/food-value-perception/">
+    <meta property="og:title" content="How Consumers Evaluate Value When Choosing Food Options">
+    <meta property="og:description" content="Understand how consumers assess value in food choices by balancing price, quality, convenience, and expectations before ordering.">
+    <meta property="og:image" content="https://consumer-insights.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://consumer-insights.com/food-value-perception/">
+    <meta property="twitter:title" content="How Consumers Evaluate Value When Choosing Food Options">
+    <meta property="twitter:description" content="Understand how consumers assess value in food choices by balancing price, quality, convenience, and expectations before ordering.">
+    <meta property="twitter:image" content="https://consumer-insights.com/twitter-image.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How Consumers Evaluate Value When Choosing Food Options",
+        "description": "Understand how consumers assess value in food choices by balancing price, quality, convenience, and expectations before ordering.",
+        "author": {
+            "@type": "Organization",
+            "name": "Consumer Insights"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Consumer Insights",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://consumer-insights.com/logo.png"
+            }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-24",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://consumer-insights.com/food-value-perception/"
+        }
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --value-green: #10b981;
+            --price-blue: #3b82f6;
+            --quality-purple: #8b5cf6;
+            --convenience-orange: #f59e0b;
+            --perception-pink: #ec4899;
+            --neutral-dark: #111827;
+            --neutral-medium: #6b7280;
+            --neutral-light: #f9fafb;
+            --white: #ffffff;
+            --cream: #fefefe;
+            --border-light: #e5e7eb;
+            --shadow-light: rgba(0, 0, 0, 0.08);
+            --shadow-medium: rgba(0, 0, 0, 0.12);
+            --gradient-value: linear-gradient(135deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+            --gradient-analysis: linear-gradient(45deg, #f59e0b 0%, #ec4899 100%);
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.6;
+            color: var(--neutral-dark);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+
+        /* Analytical Grid Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid var(--border-light);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: var(--gradient-value);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background: var(--neutral-light);
+            border-color: var(--price-blue);
+            color: var(--price-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--neutral-light) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: var(--gradient-value);
+            opacity: 0.05;
+            transform: skewX(-15deg);
+            transform-origin: top;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--value-green);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: var(--gradient-value);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--neutral-medium);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .value-calculator {
+            width: 400px;
+            height: 500px;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px var(--shadow-medium);
+            border: 2px solid var(--border-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-calculator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-value);
+        }
+
+        .calculator-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .calculator-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .value-factors {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .factor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: var(--neutral-light);
+            border-radius: 12px;
+            border-left: 4px solid var(--price-blue);
+        }
+
+        .factor:nth-child(2) { border-left-color: var(--quality-purple); }
+        .factor:nth-child(3) { border-left-color: var(--convenience-orange); }
+        .factor:nth-child(4) { border-left-color: var(--perception-pink); }
+
+        .factor-name {
+            font-weight: 600;
+            color: var(--neutral-dark);
+        }
+
+        .factor-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--value-green);
+        }
+
+        .value-result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--gradient-value);
+            border-radius: 15px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .result-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gradient-analysis);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .content-section {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 3.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 30px var(--shadow-light);
+            border: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-value);
+            border-radius: 0 0 4px 4px;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neutral-dark);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .content-section h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--price-blue);
+            margin: 2.5rem 0 1.5rem 0;
+            line-height: 1.3;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .content-section h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 6px;
+            height: 6px;
+            background: var(--value-green);
+            border-radius: 50%;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            color: var(--neutral-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .content-section a {
+            color: var(--convenience-orange);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            background: linear-gradient(120deg, transparent 0%, rgba(245, 158, 11, 0.1) 100%);
+        }
+
+        .content-section a:hover {
+            background: linear-gradient(120deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.2) 100%);
+            transform: translateY(-1px);
+        }
+
+        /* Value Factors Grid */
+        .factors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin: 4rem 0;
+        }
+
+        .factor-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            border: 2px solid transparent;
+        }
+
+        .factor-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px var(--shadow-medium);
+            border-color: var(--value-green);
+        }
+
+        .factor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--price-blue);
+        }
+
+        .factor-card:nth-child(2)::before { background: var(--quality-purple); }
+        .factor-card:nth-child(3)::before { background: var(--convenience-orange); }
+        .factor-card:nth-child(4)::before { background: var(--perception-pink); }
+
+        .factor-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-value);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .factor-card h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin-bottom: 1rem;
+        }
+
+        .factor-card p {
+            font-size: 1rem;
+            color: var(--neutral-medium);
+            line-height: 1.6;
+        }
+
+        /* Psychology Insights Section */
+        .psychology-section {
+            background: var(--gradient-analysis);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+            margin: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .psychology-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+
+        .psychology-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .psychology-container h2 {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .psychology-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3.5rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        /* Decision Process Visualization */
+        .decision-process {
+            background: var(--neutral-light);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .decision-process::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-value);
+        }
+
+        .process-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--neutral-dark);
+            margin-bottom: 3rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .process-step {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 15px var(--shadow-light);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            background: var(--value-green);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin: 1rem 0;
+        }
+
+        .step-description {
+            font-size: 0.95rem;
+            color: var(--neutral-medium);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--neutral-dark);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-value);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-value);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--neutral-medium);
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            background: var(--value-green);
+            border-color: var(--value-green);
+            transform: translateY(-2px);
+        }
+
+        .copyright {
+            border-top: 1px solid var(--neutral-medium);
+            padding-top: 2rem;
+            margin-top: 2rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .value-calculator {
+                width: 350px;
+                height: 450px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .content-section {
+                padding: 2.5rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.6rem;
+            }
+
+            .factors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .psychology-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .value-calculator {
+                width: 300px;
+                height: 400px;
+                padding: 1.5rem;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">CONSUMER_INSIGHTS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#psychology">Psychology</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    💡 VALUE_ANALYSIS
+                </div>
+                <h1>How Consumers Evaluate Value When Choosing Food Options</h1>
+                <p>Understand how consumers assess value in food choices by balancing price, quality, convenience, and expectations before ordering.</p>
+                <a href="#content" class="cta-button">Analyze Consumer Behavior</a>
+            </div>
+            <div class="hero-visual">
+                <div class="value-calculator">
+                    <div class="calculator-header">
+                        <div class="calculator-title">VALUE CALCULATOR</div>
+                    </div>
+                    <div class="value-factors">
+                        <div class="factor">
+                            <span class="factor-name">Price</span>
+                            <span class="factor-value">25%</span>
+                        </div>
+                        <div class="factor">
+                            <span class="factor-name">Quality</span>
+                            <span class="factor-value">35%</span>
+                        </div>
+                        <div class="factor">
+                            <span class="factor-name">Convenience</span>
+                            <span class="factor-value">25%</span>
+                        </div>
+                        <div class="factor">
+                            <span class="factor-name">Experience</span>
+                            <span class="factor-value">15%</span>
+                        </div>
+                    </div>
+                    <div class="value-result">
+                        <div class="result-label">PERCEIVED VALUE</div>
+                        <div class="result-score">8.7/10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="content" class="main-content">
+        <article class="content-section fade-in">
+            <p>When deciding what to eat, consumers rarely base their choice on price alone. Instead, they evaluate value by considering several factors at the same time, including quality, portion size, convenience, and personal expectations. This evaluation process helps people feel confident that their money is being spent wisely.</p>
+
+            <p>Value in food choices is subjective. What feels worth the cost to one person may not feel the same to another. Because of this, consumers rely on comparisons and past experiences to guide their decisions.</p>
+
+            <h3>Price as a Reference Point, Not the Final Decision</h3>
+            <p>Price often acts as an initial reference rather than a deciding factor. Consumers look at pricing to form expectations about quality and portion size, but they rarely stop there. A slightly higher price may be acceptable if it aligns with perceived freshness, consistency, or convenience.</p>
+
+            <p>When people can review pricing information ahead of time, it becomes easier to judge whether an option fits their budget and expectations. Looking through <a href="https://timhortonsmenu.co.uk/tim-hortons-menu-prices-uk-2025/" target="_blank">tim hortons prices</a> beforehand, for example, helps consumers mentally balance cost against what they expect to receive.</p>
+
+            <h3>Perceived Quality and Satisfaction</h3>
+            <p>Quality plays a major role in value evaluation. Consumers consider taste, ingredient consistency, and overall reliability when choosing food. If previous experiences were satisfying, people are more likely to view similar options as good value, even if prices increase slightly.</p>
+
+            <p>Consistency is especially important. When customers know what to expect, uncertainty is reduced, making value judgments faster and more confident.</p>
+
+            <h3>Portion Size and Practical Use</h3>
+            <p>Portion size is another factor tied closely to value perception. Consumers assess whether the quantity offered feels appropriate for the price paid. Meals that meet hunger expectations without feeling excessive or insufficient are often viewed as better value.</p>
+
+            <p>Practicality also matters. Food that fits easily into daily routines, whether during work breaks or busy schedules, is often perceived as more valuable regardless of price.</p>
+
+            <h3>Convenience and Time Savings</h3>
+            <p>Time has become a form of currency for many consumers. Food options that save time by being easy to order, quick to receive, or simple to understand often feel more valuable. Convenience can outweigh minor price differences when people are short on time.</p>
+
+            <p>This is why clear pricing and accessible information influence decisions even before someone arrives to order.</p>
+
+            <h3>How Value Perception Shapes Food Choices</h3>
+            <p>Ultimately, consumers evaluate value through a combination of logic and experience. Price, quality, convenience, and familiarity all work together to influence food decisions. When these elements align, people feel satisfied with their choice and are more likely to repeat it.</p>
+
+            <p>Understanding how value is perceived helps explain why consumers choose certain food options over others, even when prices vary.</p>
+        </article>
+    </main>
+
+    <!-- Value Factors Grid -->
+    <section class="factors-grid fade-in">
+        <div class="factor-card slide-in-left">
+            <div class="factor-icon">💰</div>
+            <h4>Price Reference</h4>
+            <p>Price serves as an initial anchor point for value expectations, but rarely determines the final decision alone.</p>
+        </div>
+
+        <div class="factor-card slide-in-right">
+            <div class="factor-icon">⭐</div>
+            <h4>Quality Perception</h4>
+            <p>Consistency and reliability in taste and ingredients build trust and influence value judgments over time.</p>
+        </div>
+
+        <div class="factor-card slide-in-left">
+            <div class="factor-icon">🍽️</div>
+            <h4>Portion Satisfaction</h4>
+            <p>The right balance between quantity and price creates a sense of fair value and meets hunger expectations.</p>
+        </div>
+
+        <div class="factor-card slide-in-right">
+            <div class="factor-icon">⚡</div>
+            <h4>Convenience Factor</h4>
+            <p>Time-saving benefits often justify higher prices when consumers value speed and simplicity.</p>
+        </div>
+    </section>
+
+    <!-- Psychology Insights Section -->
+    <section class="psychology-section">
+        <div class="psychology-container">
+            <h2>Consumer Value Psychology</h2>
+            <p>Understanding the psychological factors that drive food value perception</p>
+            <div class="psychology-stats fade-in">
+                <div class="stat-item">
+                    <span class="stat-number">73%</span>
+                    <span class="stat-label">Consider Multiple Factors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">45%</span>
+                    <span class="stat-label">Price-Quality Balance</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">62%</span>
+                    <span class="stat-label">Value Convenience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">89%</span>
+                    <span class="stat-label">Repeat Good Value</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decision Process -->
+    <section class="decision-process fade-in">
+        <h2 class="process-title">Consumer Decision Process</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-title">Price Check</div>
+                <div class="step-description">Initial price assessment sets expectations for quality and value</div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-title">Quality Evaluation</div>
+                <div class="step-description">Consider past experiences and perceived ingredient quality</div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-title">Convenience Assessment</div>
+                <div class="step-description">Evaluate time savings and practical benefits</div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-title">Value Decision</div>
+                <div class="step-description">Final choice based on combined factor analysis</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h3>Consumer Behavior Insights</h3>
+            <p>Analyzing how consumers make value-based decisions in food choices and market behavior.</p>
+            
+            <div class="footer-links">
+                <a href="#research">Research</a>
+                <a href="#analysis">Analysis</a>
+                <a href="#insights">Insights</a>
+                <a href="#trends">Trends</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Consumer Insights. Understanding consumer psychology and value perception in food markets.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate value calculator factors
+        const animateFactors = () => {
+            const factors = document.querySelectorAll('.factor-value');
+            const values = ['25%', '35%', '25%', '15%'];
+            
+            factors.forEach((factor, index) => {
+                let currentValue = 0;
+                const targetValue = parseInt(values[index]);
+                const increment = targetValue / 50;
+                
+                const timer = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= targetValue) {
+                        factor.textContent = values[index];
+                        clearInterval(timer);
+                    } else {
+                        factor.textContent = Math.floor(currentValue) + '%';
+                    }
+                }, 30);
+            });
+        };
+
+        // Animate stats on scroll
+        const animateStats = () => {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const finalNumber = parseInt(text.replace(/[^\d]/g, ''));
+                let currentNumber = 0;
+                const increment = finalNumber / 60;
+                
+                const timer = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= finalNumber) {
+                        stat.textContent = finalNumber + '%';
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(currentNumber) + '%';
+                    }
+                }, 25);
+            });
+        };
+
+        // Trigger animations when sections are visible
+        const calculatorObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(animateFactors, 500);
+                    calculatorObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const calculator = document.querySelector('.value-calculator');
+        const statsSection = document.querySelector('.psychology-section');
+        
+        if (calculator) calculatorObserver.observe(calculator);
+        if (statsSection) statsObserver.observe(statsSection);
+
+        // Interactive value calculator
+        document.querySelectorAll('.factor').forEach(factor => {
+            factor.addEventListener('mouseenter', () => {
+                factor.style.transform = 'scale(1.02)';
+                factor.style.boxShadow = '0 4px 15px rgba(59, 130, 246, 0.2)';
+            });
+            
+            factor.addEventListener('mouseleave', () => {
+                factor.style.transform = 'scale(1)';
+                factor.style.boxShadow = 'none';
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+    </script>
+</body>
+</html>
